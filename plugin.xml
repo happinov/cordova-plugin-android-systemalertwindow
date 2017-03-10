@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+		id="cordova-plugin-android-systemalertwindow" version="1.0.0">
+
+	<name>System Alert Window</name>
+	<description>This plugin adds SYSTEM_ALERT_WINDOW permission to app manifest on android.</description>
+	<author>Happinov</author>
+	<keywords>android,system alert window</keywords>
+	<license>MIT</license>
+	<info></info>
+
+	<platform name="android">
+		<config-file target="AndroidManifest.xml" parent="/manifest">
+			<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+		</config-file>
+	</platform>
+</plugin>
